@@ -1,4 +1,3 @@
-//Diego Chacón - Programación dinámica
 #include <iostream>
 #include <vector>
 #include <string>
@@ -9,7 +8,7 @@
 #include <thread>
 #include <chrono>
 #include <locale>
-//Iniciamos, Inge
+
 using namespace std;
 
 vector<string> tablero = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -157,7 +156,7 @@ void jugar(bool vsCPU) {
         ganador = verificarGanador();
         if (ganador != "") {
             string nombreGanador = (ganador == "X") ? nombreJugador1 : nombreJugador2;
-            cout << "\n🎉 ¡El ganador: " << nombreGanador << " (" << ganador << ")!\n";
+            cout << "\n🎉 ¡Ganador: " << nombreGanador << " (" << ganador << ")!\n";
             mostrarTableroFinal();
             break;
         } else if (esEmpate()) {
@@ -176,7 +175,7 @@ int main() {
 
     int opcion;
     do {
-        cout << "\n=== Juego del Gato ===\n";
+        cout << "\n=== Menú Tic Tac Toe ===\n";
         cout << "1. Jugar 2 jugadores\n";
         cout << "2. Jugar contra CPU\n";
         cout << "3. Salir\n";
@@ -195,7 +194,7 @@ int main() {
                 jugar(true);
                 break;
             case 3:
-                cout << "¡Vuelve pronto!\n";
+                cout << "¡Hasta luego!\n";
                 break;
             default:
                 cout << "Opción inválida.\n";
