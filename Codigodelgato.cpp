@@ -195,7 +195,7 @@ int main() {
                 jugar(true);
                 break;
             case 3:
-                cout << "¡Hasta luego!\n";
+                cout << "¡Vuelve pronto!\n";
                 break;
             default:
                 cout << "Opción inválida.\n";
