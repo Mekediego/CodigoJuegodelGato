@@ -157,7 +157,7 @@ void jugar(bool vsCPU) {
         ganador = verificarGanador();
         if (ganador != "") {
             string nombreGanador = (ganador == "X") ? nombreJugador1 : nombreJugador2;
-            cout << "\n🎉 ¡Ganador: " << nombreGanador << " (" << ganador << ")!\n";
+            cout << "\n🎉 ¡El ganador: " << nombreGanador << " (" << ganador << ")!\n";
             mostrarTableroFinal();
             break;
         } else if (esEmpate()) {
@@ -176,7 +176,7 @@ int main() {
 
     int opcion;
     do {
-        cout << "\n=== Menú Tic Tac Toe ===\n";
+        cout << "\n=== Juego del Gato ===\n";
         cout << "1. Jugar 2 jugadores\n";
         cout << "2. Jugar contra CPU\n";
         cout << "3. Salir\n";
