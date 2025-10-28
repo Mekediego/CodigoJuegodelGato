@@ -6,7 +6,7 @@
 #define JUEGO_DEL_GATO_CÓDIGODELGATO_H
 
 
-class Codigodelgato {
+class Códigodelgato {
 };
 
 
